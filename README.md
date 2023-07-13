@@ -3,11 +3,30 @@
 
 Тестовая таблица products имеет следующую структуру: id INT, name varchar(128), quantity int
 
- id |  name   | quantity
-----+---------+----------
-  1 | book    |       10
-  2 | pen     |       40
-  3 | pencil  |       80
-  4 | paper   |       80
-
-
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>quantity</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>book</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>pen</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>pencil</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>paper</td>
+        <td>80</td>
+    </tr>
+</table>

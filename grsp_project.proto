@@ -1,0 +1,37 @@
+syntax = "proto3";
+package com.postgtrs_test.grpc;
+
+
+service GetData {
+  rpc SelectByName (GetDataRequest) returns (GetDatatReply) {}
+  rpc SelectByID (GetDataRequest) returns (GetDatatReply) {}
+  rpc SelectByQuantity (GetDataRequest) returns (GetDatatReply) {}
+}
+service SetData {
+  rpc Insert (SetDataRequest) returns (SetDataReply) {}
+  rpc Update (SetDataRequest) returns (SetDataReply) {}
+}
+
+message GetDataRequest {
+  int32 id = 1;
+  string name = 2;
+  int32 quantity = 3;
+}
+
+message GetDatatReply {
+  int32 id = 1;
+  string name = 2;
+  int32 quantity = 3;
+}
+
+message SetDataRequest {
+  int32 id = 1;
+  string name = 2;
+  int32 quantity = 3;
+  string new_name = 4;
+  int32 new_quantity = 5;
+}
+
+message SetDataReply {
+  string status = 1;
+}
